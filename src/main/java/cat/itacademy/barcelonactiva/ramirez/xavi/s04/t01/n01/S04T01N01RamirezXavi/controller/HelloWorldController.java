@@ -13,7 +13,7 @@ public class HelloWorldController {
         return "Hola, " + nom + "Estas executant un projecte Maven";
     }
 
-    @RequestMapping("/HelloWorld?nom=El meu nom")
+    @RequestMapping(value = {"/HelloWorld2","/HelloWorld2/{elmeunom}"})
     public String Saluda2(@PathVariable(required = false) String nom) {
         return "Hola, " + nom + "Estas executant un projecte Maven";
 
